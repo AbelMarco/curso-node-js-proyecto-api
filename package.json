@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "express": "^4.16.3",
     "nodemon": "^1.18.4"
   },
   "devDependencies": {
@@ -20,7 +21,8 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "nodemon ./app/server.js"
   },
   "repository": {
     "type": "git",
