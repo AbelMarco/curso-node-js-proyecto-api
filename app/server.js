@@ -1,8 +1,10 @@
 const express = require('express') // llamamos a Express
 const app = express()
 const router = require('./routes')
-
+require('./db')
 const port = process.env.PORT || 8080 // establecemos nuestro puerto
+
+// require('./addCerveza')
 
 app.use('/api', router)
 
