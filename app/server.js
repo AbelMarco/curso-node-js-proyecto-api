@@ -24,3 +24,5 @@ app.get('/:nombre', (req, res) => {
 app.listen(port, () => console.log(`API escuchando en el puerto ${port}`))
 
 console.log('Api todavia no esta escuchando')
+
+module.exports = app
