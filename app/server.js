@@ -4,7 +4,11 @@ const router = require('./routes')
 require('./db')
 const port = process.env.PORT || 8080 // establecemos nuestro puerto
 const bodyParser = require('body-parser')
+const cors = require('cors')
+const morgan = require('morgan')
 
+app.use(morgan('combined'))
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
