@@ -3,6 +3,10 @@ const app = express()
 const router = require('./routes')
 require('./db')
 const port = process.env.PORT || 8080 // establecemos nuestro puerto
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 // require('./addCerveza')
 
